@@ -8,7 +8,6 @@ cle_in = input("entrez votre clé: ")
 
 #definition des variables
 compteur = 0
-compteur_text2 = 0
 compteurasci_cle = 0
 compteurasci_text = 0 
 asci_text = []
@@ -19,7 +18,6 @@ text_chiffre = []
 caractere_chiffre = 0
 
 
-
 #convertir la clé en ascii et mets dans une liste
 for cle_i in cle_in:
     asci_cle.insert(compteurasci_cle, ord(cle_i))
@@ -28,22 +26,10 @@ for cle_i in cle_in:
 
 #covertir le text en ascii et mets dans une liste
 for text_i in text_in:
-    """
-    if ord(text_i) == 32:
-        asci_text.insert(compteurasci_text, " ")
-        compteurasci_text = compteurasci_text + 1
-    else:
-        print("je passe")
-        asci_text.insert(compteurasci_text, ord(text_i))
-        #print(ord(text_i))
-        #print("-------------------------")
-        compteurasci_text = compteurasci_text + 1
-    """
     asci_text.insert(compteurasci_text, ord(text_i))
     #print(ord(text_i))
     #print("-------------------------")
     compteurasci_text = compteurasci_text + 1
-print(asci_text)
 
 """
 if compteurasci_text < compteurasci_cle :
@@ -55,6 +41,8 @@ else:
     compteurasci_total = compteurasci_text / compteurasci_cle
     print(compteurasci_total)
 """
+
+#prend la valeure la plus petite
 if compteurasci_text < compteurasci_cle :
     compteurasci_total =  compteurasci_cle 
 
@@ -63,26 +51,22 @@ else:
 
 #gros c carré je l'ai reconverti en caracteres pour voir et il me sort sa : ['\x04', '\x16', '\x0c', '\x19', '\x02', '\x07']
 
-
 #chiffre le texte
-for x in range(compteurasci_total):
+for x in range (compteurasci_text): 
 
     #regarde si c'est un espace si oui le converti pas
-    if asci_text[compteur_text2] == 32:
+    if compteurasci_text[x] == 32:
         text_chiffre.insert(x, " ")
-        compteur_text2 = compteur_text2 + 1
 
     #si ce n'est pas un espace le converti
     else:
         caractere_chiffre = (asci_text[x] + asci_cle[x])%26
-        #caractere_chiffre = chr(caractere_chiffre)
-        print(caractere_chiffre)
+        caractere_chiffre = chr(caractere_chiffre)
+        print(caractere_chiffre) 
         #mets le calcul dans la variable
-        text_chiffre.insert(compteur_text2, caractere_chiffre)
-        compteur_text2 = compteur_text2 + 1
+        text_chiffre.insert(x, caractere_chiffre)
     print("------------------")
     print(text_chiffre)
-
 
 #passe le texte chiffré en caractères
 

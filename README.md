@@ -2,14 +2,14 @@
 
 
 
-Commande pour chiffre
+## Commande pour chiffre
 --- 
 ```console
 python tp_v2.py -e FicherAChiffre -k ClesDeChiffrement -s FicherChiffre -c
 ```
 ---
-Commande pour dechiffre
----
+## Commande pour dechiffre
+
 ```console
 python tp_v2.py -e FicherADechiffre -k ClesDeChiffrement -s FicherDechiffre -d
 ```

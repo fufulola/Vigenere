@@ -12,13 +12,13 @@ Installer Python dans la dernier version
 ## Commande consol pour lance le Script
 ### Commande pour chiffre 
 ```console
-python tp_v2.py -e FicherAChiffre -k ClesDeChiffrement -s FicherChiffre -c
+python vigenere.py -e FicherAChiffre -k ClesDeChiffrement -s FicherChiffre -c
 ```
 ---
 ### Commande pour dechiffre
 
 ```console
-python tp_v2.py -e FicherADechiffre -k ClesDeChiffrement -s FicherDechiffre -d
+python vigenere.py -e FicherADechiffre -k ClesDeChiffrement -s FicherDechiffre -d
 ```
 
 ---

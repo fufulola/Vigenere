@@ -1,5 +1,13 @@
 # Script python pour chiffre des fichier avec Vigenère
-Un Script pour un examen
+Un Script pour un examen pour chiffre des text/ficher avec la methode de [Vigenère](https://fr.wikipedia.org/wiki/Chiffre_de_Vigen%C3%A8re) 
+
+## Prérequis
+Installer Python dans la dernier version
+| Platform | Lien |
+| -------- | ---- |
+| Windows x64 | `https://www.python.org/downloads/windows/` |
+| macOS | `https://www.python.org/downloads/macos/` |
+| Linux x64 | `https://www.python.org/downloads/source/` |
 
 ## Commande consol pour lance le Script
 ### Commande pour chiffre 

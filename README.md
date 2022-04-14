@@ -10,6 +10,7 @@ Installer Python dans la dernier version
 | Linux x64 | `https://www.python.org/downloads/source/` |
 
 ## Commande consol pour lance le Script
+Vous pouvez mettre des lien absolu pour trouver les ficher
 ### Commande pour chiffre 
 ```console
 python vigenere.py -e FicherAChiffre -k ClesDeChiffrement -s FicherChiffre -c
